@@ -1,0 +1,150 @@
+.acf-direction {}
+
+.acf-direction__switch {
+    display: none !important;
+}
+
+#acf-direction--up-left:checked ~ .acf-direction__buttons .acf-direction__button--up-left,
+#acf-direction--up-center:checked ~ .acf-direction__buttons .acf-direction__button--up-center,
+#acf-direction--up-right:checked ~ .acf-direction__buttons .acf-direction__button--up-right,
+#acf-direction--left:checked ~ .acf-direction__buttons .acf-direction__button--left,
+#acf-direction--center:checked ~ .acf-direction__buttons .acf-direction__button--center,
+#acf-direction--right:checked ~ .acf-direction__buttons .acf-direction__button--right,
+#acf-direction--down-left:checked ~ .acf-direction__buttons .acf-direction__button--down-left,
+#acf-direction--down-center:checked ~ .acf-direction__buttons .acf-direction__button--down-center,
+#acf-direction--down-right:checked ~ .acf-direction__buttons .acf-direction__button--down-right {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+#acf-direction--up-left:checked ~ .acf-direction__buttons .acf-direction__button--up-left .acf-direction__icon,
+#acf-direction--up-center:checked ~ .acf-direction__buttons .acf-direction__button--up-center .acf-direction__icon,
+#acf-direction--up-right:checked ~ .acf-direction__buttons .acf-direction__button--up-right .acf-direction__icon,
+#acf-direction--left:checked ~ .acf-direction__buttons .acf-direction__button--left .acf-direction__icon,
+#acf-direction--center:checked ~ .acf-direction__buttons .acf-direction__button--center .acf-direction__icon,
+#acf-direction--right:checked ~ .acf-direction__buttons .acf-direction__button--right .acf-direction__icon,
+#acf-direction--down-left:checked ~ .acf-direction__buttons .acf-direction__button--down-left .acf-direction__icon,
+#acf-direction--down-center:checked ~ .acf-direction__buttons .acf-direction__button--down-center .acf-direction__icon,
+#acf-direction--down-right:checked ~ .acf-direction__buttons .acf-direction__button--down-right .acf-direction__icon {
+    opacity: 1;
+}
+
+.acf-direction__buttons {
+    overflow: hidden; /* Cheeky clearfix */
+}
+
+.acf-direction__button {
+    position: relative;
+    float: left;
+
+    width: 4em;
+    height: 4em;
+
+    border: 1px solid #cccccc;
+
+    background-color: rgba(0, 0, 0, 0.02);
+
+    transition-property: background-color;
+    transition-duration: 150ms;
+}
+
+.acf-direction__button--up-left {
+    clear: left;
+
+    border-top-left-radius: 0.5em;
+}
+
+.acf-direction__button--up-left .acf-direction__icon {
+    background-image: url('../images/direction--up-left.png');
+}
+
+.acf-direction__button--up-center {
+    border-left: 0;
+    border-right: 0;
+}
+
+.acf-direction__button--up-center .acf-direction__icon {
+    background-image: url('../images/direction--up.png');
+}
+
+.acf-direction__button--up-right {
+    border-top-right-radius: 0.5em;
+}
+
+.acf-direction__button--up-right .acf-direction__icon {
+    background-image: url('../images/direction--up-right.png');
+}
+
+.acf-direction__button--left {
+    clear: left;
+
+    border-top: 0;
+    border-bottom: 0;
+}
+
+.acf-direction__button--left .acf-direction__icon {
+    background-image: url('../images/direction--left.png');
+}
+
+.acf-direction__button--center {
+    border: 0;
+}
+
+.acf-direction__button--center .acf-direction__icon {
+    background-image: url('../images/direction--center.png');
+}
+
+.acf-direction__button--right {
+    border-top: 0;
+    border-bottom: 0;
+}
+
+.acf-direction__button--right .acf-direction__icon {
+    background-image: url('../images/direction--right.png');
+}
+
+.acf-direction__button--down-left {
+    clear: left;
+
+    border-bottom-left-radius: 0.5em;
+}
+
+.acf-direction__button--down-left .acf-direction__icon {
+    background-image: url('../images/direction--down-left.png');
+}
+
+.acf-direction__button--down-center {
+    border-left: 0;
+    border-right: 0;
+}
+
+.acf-direction__button--down-center .acf-direction__icon {
+    background-image: url('../images/direction--down.png');
+}
+
+.acf-direction__button--down-right {
+    border-bottom-right-radius: 0.5em;
+}
+
+.acf-direction__button--down-right .acf-direction__icon {
+    background-image: url('../images/direction--down-right.png');
+}
+
+.acf-direction__icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+
+    opacity: 0.2;
+
+    transition-property: opacity;
+    transition-duration: 150ms;
+}
+
+.acf-direction__label {
+    display: none;
+}
