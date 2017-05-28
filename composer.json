@@ -1,0 +1,11 @@
+{
+    "name": "Ozpital/acf-direction",
+    "description": "A visual direction select",
+    "license": "GPL-2.0+",
+    "type": "wordpress-plugin",
+    "homepage": "https://github.com/ozpital/acf-direction/",
+    "authors": [{
+        "name": "Laurence Archer (@ozpital)",
+        "homepage": "https://twitter.com/ozpital/"
+    }]
+}
